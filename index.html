@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人展示页面</title>
+    <!-- Swiper CSS CDN用于照片轮播 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Font Awesome CDN用于社交媒体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 在head部分添加网站图标 -->
+    <link rel="icon" type="image/png" href="https://profile.csdnimg.cn/6/9/0/3_qq_41464123">
+    <meta name="description" content="再见孙悟空的个人作品集网站，展示技术博客文章和项目经验">
+    <meta name="keywords" content="Android开发,全栈开发,技术博客,CSDN博主">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Portfolio</span>
+            </div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#gallery">作品集</a></li>
+                <li><a href="#tech-columns">技术专栏</a></li>
+                <li><a href="#latest-posts">最新文章</a></li>
+                <li><a href="#social">社交</a></li>
+                <li><a href="#ai-chat">AI助手</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 个人展示区域 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="profile">
+                <div class="profile-image">
+                    <div class="profile-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="imgs/photo3.jpg" alt="个人照片1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imgs/photo1.jpg" alt="个人照片2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="imgs/photo2.jpg" alt="个人照片3">
+                            </div>
+                        </div>
+                        <!-- 添加分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="profile-text">
+                    <h1>再见孙悟空 <span class="highlight">全栈开发专家</span></h1>
+                    <p class="tagline">CSDN专家博主 | 阿里云技术专家 | 华为云享专家 | 51CTO博客专家</p>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <span class="number">1,524,748</span>
+                            <span class="label">总访问量</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="number">27,773</span>
+                            <span class="label">粉丝数量</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="number">692</span>
+                            <span class="label">原创文章</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary">联系我</a>
+                        <a href="#gallery" class="btn secondary">技术专栏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业领域部分 -->
+    <section id="expertise">
+        <div class="section-container">
+            <h2 class="section-title">专业领域</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>人工智能</h3>
+                    <p>深耕AI领域，包括语音识别、计算机视觉、机器学习等方向</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>移动开发</h3>
+                    <p>专注Android开发，擅长原生开发与跨平台解决方案</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>行业解决方案</h3>
+                    <p>能源行业、建筑行业信息化解决方案专家</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 技术专栏部分 -->
+    <section id="tech-columns">
+        <div class="section-container">
+            <h2 class="section-title">技术专栏</h2>
+            <div class="columns-grid">
+                <div class="column-card">
+                    <div class="card-header premium">
+                        <i class="fas fa-crown"></i>
+                        热门专栏
+                    </div>
+                    <h3>2025 DeepSeek技术全景实战</h3>
+                    <p>深度探索AI技术前沿，实战案例详解</p>
+                    <div class="article-count">94篇文章</div>
+                    <div class="tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">深度学习</span>
+                    </div>
+                </div>
+                <div class="column-card">
+                    <div class="card-header premium">
+                        <i class="fas fa-crown"></i>
+                        精选专栏
+                    </div>
+                    <h3>2025 AI学习从零单排系列</h3>
+                    <p>AI入门到进阶的完整学习路线</p>
+                    <div class="article-count">112篇文章</div>
+                    <div class="tags">
+                        <span class="tag">人工智能</span>
+                        <span class="tag">实战教程</span>
+                    </div>
+                </div>
+                <div class="column-card">
+                    <div class="card-header new">
+                        <i class="fas fa-star"></i>
+                        最新专栏
+                    </div>
+                    <h3>2025项目管理实战</h3>
+                    <p>从0到1的项目管理全流程实战指南</p>
+                    <div class="article-count">68篇文章</div>
+                    <div class="tags">
+                        <span class="tag">项目管理</span>
+                        <span class="tag">实战案例</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片轮播 -->
+    <section id="gallery">
+        <h2>我的作品集</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://picsum.photos/800/400?random=1" alt="项目展示1">
+                    <div class="slide-caption">个人博客项目</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://picsum.photos/800/400?random=2" alt="项目展示2">
+                    <div class="slide-caption">电商网站设计</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://picsum.photos/800/400?random=3" alt="项目展示3">
+                    <div class="slide-caption">移动应用界面</div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- 社交媒体链接 -->
+    <section id="social">
+        <div class="section-container">
+            <h2>关注我</h2>
+            <div class="social-links">
+                <a href="https://blog.csdn.net/qq_41464123" target="_blank" title="CSDN博客">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="https://space.bilibili.com/your-id" target="_blank" title="哔哩哔哩">
+                    <i class="fab fa-bilibili"></i>
+                </a>
+                <a href="https://weibo.com/your-id" target="_blank" title="微博">
+                    <i class="fab fa-weibo"></i>
+                </a>
+                <a href="https://gitee.com/your-id" target="_blank" title="码云">
+                    <i class="fab fa-git-alt"></i>
+                </a>
+                <a href="tencent://message/?uin=721519803" title="QQ联系">
+                    <i class="fab fa-qq"></i>
+                </a>
+                <a href="https://www.zhihu.com/people/your-id" target="_blank" title="知乎">
+                    <i class="fas fa-zhihu"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更新AI助手部分 -->
+    <div class="ai-chat-widget">
+        <button class="chat-toggle" onclick="toggleChat()">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3><i class="fas fa-robot"></i> AI智能助手</h3>
+                <button class="close-chat" onclick="toggleChat()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    您好！我是您的AI助手，有什么可以帮您的吗？
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="请输入您的问题...">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 更新最新文章部分 -->
+    <section id="latest-posts">
+        <div class="section-container">
+            <h2 class="section-title">最新文章</h2>
+            <div class="posts-grid">
+                <div class="post-card">
+                    <div class="post-category">Android</div>
+                    <h3><a href="https://blog.csdn.net/qq_41464123/article/details/133890333" target="_blank">Android 自定义View之自定义进度条</a></h3>
+                    <p>本文将详细介绍如何在Android中实现自定义进度条，包括基本绘制、动画效果和交互处理...</p>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 2023-10-17</span>
+                        <span><i class="far fa-eye"></i> 1.2k阅读</span>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-category">物联网</div>
+                    <h3><a href="https://blog.csdn.net/qq_41464123/article/details/133890334" target="_blank">MQTT在智慧工地中的应用实践</a></h3>
+                    <p>本文介绍了MQTT协议在智慧工地项目中的实际应用，包括设备通信、数据采集等方面...</p>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 2023-10-15</span>
+                        <span><i class="far fa-eye"></i> 2.3k阅读</span>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-category">架构设计</div>
+                    <h3><a href="https://blog.csdn.net/qq_41464123/article/details/133890335" target="_blank">工业项目微服务架构设计实践</a></h3>
+                    <p>分享一个实际工业项目的微服务架构设计方案，包括服务拆分、数据流转、部署方案等...</p>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 2023-10-12</span>
+                        <span><i class="far fa-eye"></i> 3.5k阅读</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="https://blog.csdn.net/qq_41464123" target="_blank" class="btn secondary">查看更多文章</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加文章分类展示 -->
+    <section id="article-categories">
+        <div class="section-container">
+            <h2 class="section-title">文章分类</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Android开发</h3>
+                    <ul class="article-list">
+                        <li>
+                            <a href="https://blog.csdn.net/qq_41464123/article/details/133890333" target="_blank">
+                                Android自定义View进阶之路
+                                <span class="article-date">2023-10-17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.csdn.net/qq_41464123/article/details/133890336" target="_blank">
+                                Kotlin协程实战指南
+                                <span class="article-date">2023-10-10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>物联网技术</h3>
+                    <ul class="article-list">
+                        <li>
+                            <a href="https://blog.csdn.net/qq_41464123/article/details/133890334" target="_blank">
+                                MQTT协议应用实践
+                                <span class="article-date">2023-10-15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.csdn.net/qq_41464123/article/details/133890337" target="_blank">
+                                物联网平台架构设计
+                                <span class="article-date">2023-10-08</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
