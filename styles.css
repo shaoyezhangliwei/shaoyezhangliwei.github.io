@@ -400,7 +400,7 @@ nav {
 }
 
 .profile-text {
-    max-width: 500px;
+    max-width:1000px;
 }
 
 .profile-text h1 {
@@ -1038,29 +1038,38 @@ section:nth-child(odd) {
 
 /* 添加自定义图标样式 */
 .fab.fa-bilibili:before {
-    content: "B站";
+    content: "华为";
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+/* 添加自定义图标样式 */
+.fab.fa-weibo:before {
+    content: "阿里";
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+/* 添加自定义图标样式 */
+.fab.fa-git-alt:before {
+    content: "51CTO";
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-style: normal;
 }
 
-.fas.fa-zhihu:before {
-    content: "知";
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
+
 
 /* 调整社交图标颜色 */
 .social-links a[title="CSDN博客"]:hover {
     background: #fc5531;
 }
 
-.social-links a[title="哔哩哔哩"]:hover {
+.social-links a[title="华为云"]:hover {
     background: #fb7299;
 }
 
-.social-links a[title="微博"]:hover {
+.social-links a[title="阿里云"]:hover {
     background: #e6162d;
 }
 
