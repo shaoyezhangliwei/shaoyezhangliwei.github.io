@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" href="https://profile.csdnimg.cn/6/9/0/3_qq_41464123">
     <meta name="description" content="再见孙悟空的个人作品集网站，展示技术博客文章和项目经验">
     <meta name="keywords" content="人工智能，AI,DeepSeek,AI视频，AI学习，华为云，阿里云，腾讯云，51CTO,再见孙悟空，小红书，抖音，腾讯，小米，大模型，全栈开发,技术博客,CSDN博主">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -381,5 +383,20 @@
     <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html> 
